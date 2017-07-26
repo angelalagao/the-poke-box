@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name=viewport content="width=device-width, user-scalable=no, initial-scale=1">
+	<title>The Poke Box</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:100,500" rel="stylesheet">
+	<link rel="stylesheet" href="styles/setup.css">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+
+	<!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+	<meta name="description" content="Poke Box Salad in Financial District Toronto serving fresh Ahi Tuna poke 
+	Salmon poke and other seafood salad with seasonal toppings">
+</head>
+<body>
+	<header class="clearfix" id="home">
+		<!-- FADE TRANSITION INSTEAD OF CAROUSEL -->
+
+		<div class="wrapperHome">
+			<ul class="main-carousel">
+				<li><img src="images/tuna-cubes.jpg" alt="tuna cubes"></li>
+				<li><img src="images/tuna.jpg" alt="tuna"></li>
+				<!-- <li><img src="images/thepokebox.jpg" alt="the poke box"></li> -->
+				<!-- <li><img src="images/superfood.jpg" alt="super food"></li> -->
+				<!-- <li><img src="images/seaweed.jpg" alt="seaweed"></li> -->
+				<li><img src="images/eat.png" alt=""></li>
+				<!-- <li><img src="images/green-beret.jpg" alt="green beret"></li> -->
+			</ul>
+
+		<!-- Logo on top of the carousel/fade -->
+			<div class="logoWrapper">
+				<h1><img src="images/pokebox-logo.png" alt="the poke box logo" class="logo"></h1>
+			</div>
+		</div>
+		<div class="desktopOnlyHeader">
+		<!-- 	<img src="images/pokebox-logo.png" alt="logo" class="desktopFish"> -->
+			<nav class="desktopNav">
+				<ul>
+					<li><a href="index.html" class="desktop">Home</a></li>
+					<li><a href="mission.html" class="desktop">Mission</a></li>
+					<li><a href="menu.html" class="desktop">Menu</a></li>
+					<li><a href="#order" class="desktop">Order</a></li>
+					<li><a href="contact.html" class="desktop">Contact</a></li>
+				</ul>
+			</nav>
+
+			<img src="images/pokebox-logo.png" alt="logo" class="desktopFish">
+		</div>
+	</header>
+
+	<main class="clearfix">
+		<div class="flexWrapper">
+			<button class="accordion">Order<img src="images/poke-box-fish.png" alt="poke box fish"></button>
+			<div class="panel" id="order">
+			 	<div class="orderWrapper">
+				 	<h3>skip the line</h3>
+				 	<button class="clickOrder">
+				 		<h2><a href="https://squareup.com/store/thepokebox/" target="_blank" class="order">order online!</a></h2>
+				 	</button>
+			 	</div>
+			</div> <!-- /panel -->
+		</div> <!-- /flexWrapper -->
+	</main>
+	<footer>
+		<ul class="icons">
+			<li><a href="https://www.facebook.com/PokeBoxTO/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="https://www.instagram.com/thepokebox/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a href="mailto:info@thepokebox.ca"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+			<a href="tel:4169290363"><i class="fa fa-phone-square" aria-hidden="true"></i></a></li>
+			<!-- ENTER GOOGLE MAPS -->
+			<li><i class="fa fa-map-marker" aria-hidden="true"></i></li>			
+			<!-- ENTER HOURS -->
+			<li><i class="fa fa-clock-o" aria-hidden="true"></i></li>
+		</ul>
+		
+		<div id="map" class="googleMaps">
+			<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkp8lP6pthqqE3T7l_8jCAT-p-WLFCN3M&q=the+poke+box,toronto+ontario" allowfullscreen></iframe>
+		</div>
+
+		<div class="storeHours">
+			<h3>Hours</h3>
+			<ul>
+				<li>Mon <span class="hours">11:00am - 7:00pm</span></li>
+				<li>Tue <span class="hours">11:00am - 7:00pm</span></li>
+				<li>Wed <span class="hours">11:00am - 7:00pm</span></li>
+				<li>Thu <span class="hours">11:00am - 7:00pm</span></li>
+				<li>Fri <span class="hours">11:00am - 7:00pm</span></li>
+				<li>Sat <span class="hours">12:00pm - 5:00pm</span></li>
+				<li>Sun <span class="hours">Closed</span></li>
+			</ul>
+		</div>
+
+		<img src="images/poke-box-fish.png" alt="logo">
+		<p>&copy; ThePokeBox</p>
+	</footer>
+		
+
+		<!-- INSTAGRAM POST CAROUSEL IN FOOTER -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	
+
+	<!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+	<!-- custom CSS comes third-->
+	<script>
+	    $(function() {
+
+	    	$('.accordion').click(function() {
+	    		console.log('clicked')
+	    		// $('.active').removeClass('active');
+	    		// $(this).next().toggleClass('active');
+
+	    		$(this).toggleClass('active').next().slideToggle(900);
+	    		// how to close panel section if click on a different button
+
+	    	});
+
+
+	    	$('.main-carousel').slick({
+	    		arrows: false,
+	    		fade: true,
+	    		autoplay: true,
+	    		draggable: true,
+	    		cssEase: 'linear'
+	    	});
+
+	    	$('.carousel-cell').slick({
+	    		autoplay: true,
+	    		autoplaySpeed: 4000,
+	    		swipetToSlide: true,
+	    		arrows: false,
+	    		draggable: true
+	    	});
+
+	    	$('.fa-map-marker').click(function() {
+	    		$('.googleMaps').slideToggle(900);
+	    	});
+
+	    	$('.fa-clock-o').click(function() {
+	    		$('.storeHours').slideToggle(900);
+	    	});
+
+	    	// $('.desktopFish').click(function(){
+	    	// 	$('.desktopNav').slideToggle(900);
+	    	// });
+
+	    	$('.desktopFish').mouseenter(function() {
+	    		$('.desktopNav').slideToggle(1000);
+	    	});
+
+	    });
+
+
+	</script>
+</body>
+</html>
